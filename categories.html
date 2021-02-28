@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/smarphone.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <header class="box-header">
+            <div class="header-logo">
+                <h1><span>concrete</span></h1>
+            </div>
+            <div class="header-user">
+                <a href="#"><img src="./images/profile-user.png" alt="" /></a>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="block-title">
+                <ul>
+                    <li class="users-ttl"><a href="#">Users</a></li>
+                    <li class="collectibles-ttl"><a href="#">Collectibles</a></li>
+                    <li class="categories-ttl active"><a href="./categories.html">Categories</a></li>
+                    <li class="configurations-ttl"><a href="./configurations.html">Configurations</a></li>
+                </ul>
+            </div>
+            <div class="section-content" id="categories">
+                <div class="common-ttl">
+                    <h2>Categories</h2>
+                    <div class="list-btn">
+                        <a class="add-btn" href="javascript:void(0)">Add</a>
+                        <a class="delete-btn" href="javascript:void(0)">Delete All</a>
+                    </div>
+                </div>
+                <div class="table-content">
+                    <div class="table-cnt-wrap">
+                        <div class="table-cnt-inner">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Key</th>
+                                        <th>Display name</th>
+                                        <th>Show/Hide</th>
+                                        <th>Order</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+                                        <th>Bulk Delete</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="box-pubup">
+            <div class="pubup-inside">
+                <div class="pubup-body">
+                    <div class="pubup-ttl">
+                        <p>Add New Categories</p>
+                        <a class="btn-close" href="javascript:void(0)"><img src="./images/cancel.png" alt="" /></a>
+                    </div>
+                    <div class="pubup-content">
+                        <div class="content-inner">
+                            <p>
+                                <label for="label-key">Key</label>
+                                <input id="label-key" type="text">
+                            </p>
+                            <p>
+                                <label for="label-display-name">Display name</label>
+                                <input id="label-display-name" type="text">
+                                <select id="label-display-name">
+                                    <option value="0">Games</option>
+                                    <option value="1">DeFi</option>
+                                    <option value="2">Domains</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="label-status">Status</label>
+                                <select id="label-status">
+                                    <option value="0">Enable</option>
+                                    <option value="1">Disable</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="label-order">Order</label>
+                                <input id="label-order" type="text">
+                            </p>
+                        </div>
+                        <div class="add-btn">
+                            <a href="javascript:void(0)">Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
